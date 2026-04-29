@@ -16,8 +16,6 @@ class UpdateTest extends DuskTestCase
 
         $this->browse(function (Browser $browser) use ($user) {
             $browser->loginAs($user)
-                
-                // 1. Tambah buku pancingan
                 ->visit('/books')
                 ->clickLink('Tambah Buku')
                 ->type('title', 'Buku Untuk Diupdate')
